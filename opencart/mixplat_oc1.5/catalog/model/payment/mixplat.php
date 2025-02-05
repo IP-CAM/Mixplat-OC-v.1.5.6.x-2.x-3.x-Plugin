@@ -140,12 +140,8 @@ class ModelPaymentMixplat extends Model {
             $name = '0';
         }
 
-        if ($nds == 'vat20') {
-            $name = '1';
-        }
-
-        if ($nds == 'vat120') {
-            $name = '2';
+        if ($nds == 'vat0') {
+            $name = '5';
         }
 
         if ($nds == 'vat10') {
@@ -156,12 +152,34 @@ class ModelPaymentMixplat extends Model {
             $name = '4';
         }
 
-        if ($nds == 'vat0') {
-            $name = '5';
+        if ($nds == 'vat20') {
+            $name = '1';
+        }
+
+        if ($nds == 'vat120') {
+            $name = '2';
         }
 
         if ($nds == 'none') {
             $name = '6';
+        }
+
+        /* 20250205 update */
+
+        if ($nds == 'vat5') {
+            $name = '7';
+        }
+
+        if ($nds == 'vat7') {
+            $name = '8';
+        }
+
+        if ($nds == 'vat105') {
+            $name = '9';
+        }
+
+        if ($nds == 'vat107') {
+            $name = '10';
         }
 
         return $name;
@@ -174,12 +192,8 @@ class ModelPaymentMixplat extends Model {
             $name = 'none';
         }
 
-        if ($nds == '1') {
-            $name = 'vat20';
-        }
-
-        if ($nds == '2') {
-            $name = 'vat120';
+        if ($nds == '5') {
+            $name = 'vat0';
         }
 
         if ($nds == '3') {
@@ -190,12 +204,34 @@ class ModelPaymentMixplat extends Model {
             $name = 'vat110';
         }
 
-        if ($nds == '5') {
-            $name = 'vat0';
+        if ($nds == '1') {
+            $name = 'vat20';
+        }
+
+        if ($nds == '2') {
+            $name = 'vat120';
         }
 
         if ($nds == '6') {
             $name = 'none';
+        }
+
+        /* 20250205 update */
+
+        if ($nds == '7') {
+            $name = 'vat5';
+        }
+
+        if ($nds == '8') {
+            $name = 'vat7';
+        }
+
+        if ($nds == '9') {
+            $name = 'vat105';
+        }
+
+        if ($nds == '10') {
+            $name = 'vat107';
         }
 
         return $name;
