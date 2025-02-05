@@ -872,6 +872,8 @@ class ControllerExtensionPaymentmixplat extends Controller {
             $numpos = 0;
             $itogo  = 0;
 
+            /* 20250205 update */
+
             $ondsrules = array(
                 array(
                     'id'   => 0,
@@ -900,6 +902,22 @@ class ControllerExtensionPaymentmixplat extends Controller {
                 array(
                     'id'   => 6,
                     'name' => 'Без НДС',
+                ),
+                array(
+                    'id'   => 7,
+                    'name' => 'НДС 5%',
+                ),
+                array(
+                    'id'   => 8,
+                    'name' => 'НДС 7%',
+                ),
+                array(
+                    'id'   => 9,
+                    'name' => 'НДС 5/105',
+                ),
+                array(
+                    'id'   => 10,
+                    'name' => 'НДС 7/107',
                 ),
             );
 

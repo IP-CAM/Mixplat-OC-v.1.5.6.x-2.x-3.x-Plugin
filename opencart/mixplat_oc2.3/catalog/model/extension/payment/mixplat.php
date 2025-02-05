@@ -162,6 +162,24 @@ class ModelExtensionPaymentMixplat extends Model {
             $name = '6';
         }
 
+        /* 20250205 update */
+
+        if ($nds == 'vat5') {
+            $name = '7';
+        }
+
+        if ($nds == 'vat7') {
+            $name = '8';
+        }
+
+        if ($nds == 'vat105') {
+            $name = '9';
+        }
+
+        if ($nds == 'vat107') {
+            $name = '10';
+        }
+
         return $name;
     }
 
@@ -194,6 +212,24 @@ class ModelExtensionPaymentMixplat extends Model {
 
         if ($nds == '6') {
             $name = 'none';
+        }
+
+        /* 20250205 update */
+
+        if ($nds == '7') {
+            $name = 'vat5';
+        }
+
+        if ($nds == '8') {
+            $name = 'vat7';
+        }
+
+        if ($nds == '9') {
+            $name = 'vat105';
+        }
+
+        if ($nds == '10') {
+            $name = 'vat107';
         }
 
         return $name;
